@@ -1,0 +1,97 @@
+<link rel="import" href="/header.html">
+  <div class="card bg-light">
+    <article class="card-body mx-auto" style="width: 400px;">
+      <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#login" role="tab">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#register" role="tab">Register</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <!-- login Form -->
+        <div id="login" class="tab-pane fade show active" role="tabpanel">
+          <h4 class="card-title mt-3 text-center">Login Account</h4>
+          <div class="text-danger text-center" id="loginFail"></div>
+          <form id="loginForm">
+            <div class="form-group input-group">
+          		<div class="input-group-prepend">
+                  <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+          		</div>
+              <input id="loginEmail" class="form-control" placeholder="Email" type="text">
+            </div>
+            <div class="form-group input-group">
+               <div class="input-group-prepend">
+                   <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+               </div>
+               <input class="form-control" id="loginPassword" placeholder="Password" type="password">
+            </div> <!-- form-group// -->
+            <div class="form-group">
+               <button type="submit" id="loginBtn" class="btn btn-primary btn-block"> Login  </button>
+            </div> <!-- form-group// -->
+            <p class="text-center">New User? <a data-toggle="tab" href="#register">Sign Up</a> </p>
+          </form>
+        </div>
+        <!--Registration -->
+        <div id="register" class="tab-pane fade show" role="tabpanel">
+          <h4 class="card-title mt-3 text-center">Create Account</h4>
+        	<p class="text-center">Get started with your free account</p>
+        	<p>
+        		<a href="" class="btn btn-block btn-twitter"> <i class="fab fa-twitter"></i>   Login via Twitter</a>
+        		<a href="" class="btn btn-block btn-facebook"> <i class="fab fa-facebook-f"></i>   Login via facebook</a>
+        	</p>
+        	<p class="divider-text">
+            <span class="bg-light">OR</span>
+          </p>
+          <div class="text-center" id="registrationFail"></div>
+          <!-- Registration Form -->
+          <form id="signupForm">
+        	   <div class="form-group input-group">
+        		     <div class="input-group-prepend">
+        		         <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+        		     </div>
+                  <input id="name" class="form-control" placeholder="Full name" type="text">
+                  <span id="nameError" class="error-message text-danger small"></span>
+             </div> <!-- form-group// -->
+             <div class="form-group input-group">
+            	  <div class="input-group-prepend">
+        		        <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+        		    </div>
+                <input id="email" class="form-control" placeholder="Email address" type="email">
+                <span id="emailError" class="error-message text-danger small"></span>
+             </div> <!-- form-group// -->
+             <div class="form-group input-group">
+            	  <div class="input-group-prepend">
+        		        <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+        		    </div>
+            	  <input id="phoneNumber" class="form-control" placeholder="Phone number" type="text">
+                <span id="phoneNumberError" class="error-message text-danger small"></span>
+             </div> <!-- form-group// -->
+             <div class="form-group input-group">
+            	  <div class="input-group-prepend">
+        		        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+        		    </div>
+                <input id="password" class="form-control" placeholder="Create password" type="password">
+                <span id="passwordError" class="error-message text-danger small"></span>
+             </div> <!-- form-group// -->
+
+            <!--
+            <div class="form-group input-group">
+            	  <div class="input-group-prepend">
+        		        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+        		    </div>
+                <input id="confirmPassword" class="form-control" placeholder="Repeat password" type="password">
+                <span id="cPasswordError" class="text-danger"></span>
+             </div>
+             --> <!-- form-group// -->
+             <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block" id="signupBtn"> Create Account  </button>
+             </div> <!-- form-group// -->
+             <p class="text-center">Have an account? <a href="#login" data-toggle="tab">Log In</a> </p>
+          </form>
+        </div>
+      </div>
+    </article>
+  </div> <!-- card.// -->
+<link rel="import" href="/footer.html">
